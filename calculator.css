@@ -1,0 +1,117 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .calculator {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            width: 340px;
+        }
+
+        .display {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 2.5rem;
+            padding: 20px;
+            text-align: right;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            min-height: 80px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            justify-items: center;
+        }
+
+        button {
+            width: 60px;
+            height: 60px;
+            font-size: 1.4rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .number, .decimal {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+
+        .number:hover, .decimal:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .operator {
+            background: rgba(255, 149, 0, 0.4);
+            color: #fff;
+        }
+
+        .operator:hover {
+            background: rgba(255, 149, 0, 0.6);
+        }
+
+        .equals {
+            background: rgba(76, 175, 80, 0.4);
+            color: #fff;
+            grid-column: span 2;
+            border-radius: 50px;
+            width: 132px;
+        }
+
+        .equals:hover {
+            background: rgba(76, 175, 80, 0.6);
+        }
+
+        .clear {
+            background: rgba(244, 67, 54, 0.4);
+            color: #fff;
+        }
+
+        .clear:hover {
+            background: rgba(244, 67, 54, 0.6);
+        }
+
+        .delete {
+            background: rgba(255, 107, 107, 0.4);
+            color: #fff;
+        }
+
+        .delete:hover {
+            background: rgba(255, 107, 107, 0.6);
+        }
